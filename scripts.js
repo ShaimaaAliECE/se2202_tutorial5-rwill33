@@ -38,6 +38,7 @@ function takeCell(event)
     } else if (nextPlayer == 'O'){
         nextPlayer = 'X';
     }
+    document.getElementById("next-lbl").innerHTML = nextPlayer;
     /*
         When the button is clicked, the space inside its square brackets is replaced by the value in the nextPlayer before switching it
     */
