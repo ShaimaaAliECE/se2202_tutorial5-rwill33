@@ -15,7 +15,7 @@ function createGameBoard()
         let button = document.createElement("button");
         button.innerHTML = "[ ]";
         button.type = "button";
-        document.getElementById(gameboardPlace).appendChild(button);
+        document.getElementById(gameboardPlace.id).appendChild(button);
     }
    
 }
