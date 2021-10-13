@@ -11,10 +11,13 @@ createGameBoard()
 function createGameBoard()
 {
     // Programatically add a button with square brackets enclosing an empty space to each cell in the gameboard
-   let button = document.createElement("button");
-   button.innerHTML = "[ ]";
-   button.type = "button";
-    document.getElementById("c1").appendChild(button);
+    for(let gameboardPlace of document.getElementsByTagName("td")){
+        let button = document.createElement("button");
+        button.innerHTML = "[ ]";
+        button.type = "button";
+        document.getElementById(gameboardPlace).appendChild(button);
+    }
+   
 }
 
 // Programatically add 'takeCell' as an event listener to all the buttons on the board
