@@ -1,6 +1,7 @@
 let nextPlayer = 'X'; // takes a value of either 'X' or 'O' according to the game turns
 
 //initialize the game
+document.getElementById("next-lbl").innerHTML = nextPlayer;
 
 // use the value stored in the nextPlayer variable to indicate who the next player is
 
