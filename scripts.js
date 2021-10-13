@@ -37,7 +37,7 @@ function takeCell(event)
     */
 
     // Make sure the button is clickable only once (I didn't mention how to do that, look it up :) )
-
+    btn.disabled = true;
     // Check if the game is over
     if (isGameOver())
     {
@@ -49,6 +49,9 @@ function takeCell(event)
 
 function isGameOver()
 {
+    if (document.querySelectorAll('button').disabled == true){
+        return true;
+    }
     // This function returns true if all the buttons are disabled and false otherwise 
-   
+   return false;
 }
