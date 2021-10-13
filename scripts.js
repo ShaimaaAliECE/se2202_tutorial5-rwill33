@@ -32,6 +32,11 @@ function takeCell(event)
 {
     let btn = event.target;
     btn.innerHTML = nextPlayer;
+    if (nextPlayer == 'X'){
+        nextPlayer = 'O';
+    } else if (nextPlayer == 'O'){
+        nextPlayer = 'X';
+    }
     /*
         When the button is clicked, the space inside its square brackets is replaced by the value in the nextPlayer before switching it
     */
