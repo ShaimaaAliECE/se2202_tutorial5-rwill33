@@ -49,9 +49,16 @@ function takeCell(event)
 
 function isGameOver()
 {
-    if (document.querySelectorAll('button').disabled == true){
+    let btns = document.querySelectorAll('button');
+    let counter = 0;
+    for (let i=0; i<btns.length; i++)
+    {
+        if (btns[i].disabled == true)
+            counter++;
+    }
+    if (counter == btns.length){
         return true;
     }
     // This function returns true if all the buttons are disabled and false otherwise 
-   return false;
+    return false;
 }
